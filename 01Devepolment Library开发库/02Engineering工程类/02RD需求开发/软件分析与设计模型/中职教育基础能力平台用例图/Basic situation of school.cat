@@ -1,0 +1,1154 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "Basic situation of school"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5B55D10103A7"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Association "$UNNAMED$0"
+	    quid       	"5B5682CC0354"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"5B5682CD0244"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Operating conditions::Add Operating conditions"
+		    quidu      	"5B567FE80299"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"5B5682CD0246"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Association "$UNNAMED$3"
+	    quid       	"5B5682DA0292"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"5B5682DB0313"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Professional grade and curriculum construction::Add professional grade and curriculum construction"
+		    quidu      	"5B567FFE0041"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"5B5682DB0315"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Association "$UNNAMED$6"
+	    quid       	"5B5682E20130"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"5B5682E30105"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Related vocational education groups::Add related vocational education groups"
+		    quidu      	"5B56802000BA"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$8"
+		    quid       	"5B5682E30107"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Association "$UNNAMED$9"
+	    quid       	"5B5682EA0328"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$10"
+		    quid       	"5B5682ED0098"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::International cooperation::Add international cooperation"
+		    quidu      	"5B56803A036C"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$11"
+		    quid       	"5B5682ED009A"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Association "$UNNAMED$12"
+	    quid       	"5B5682EF0357"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"5B5682F002DA"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::School-enterprise cooperation::School-enterprise cooperation"
+		    quidu      	"5B5680AF0370"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$14"
+		    quid       	"5B5682F002DC"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Class_Category "International cooperation"
+	    quid       	"5B56D63B0103"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "Add international cooperation"
+		    quid       	"5B56803A036C")
+		(object UseCase "update international cooperation"
+		    quid       	"5B56DABB01FC")
+		(object Association "$UNNAMED$15"
+		    quid       	"5B56DADF00E4"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$16"
+			    quid       	"5B56DADF02C9"
+			    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::International cooperation::update international cooperation"
+			    quidu      	"5B56DABB01FC"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$17"
+			    quid       	"5B56DADF02CB"
+			    supplier   	"Use Case View::SICS::Actors::School"
+			    quidu      	"353D5816026C"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "International cooperation"
+		    quid       	"5B56DACC0274"
+		    title      	"International cooperation"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::International cooperation::Add international cooperation" @1
+			    location   	(1232, 320)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(1232, 458)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Add international cooperation")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56803A036C")
+			(object ClassView "Class" "Use Case View::SICS::Actors::School" @2
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(544, 672)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(544, 832)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	347
+				justify    	0
+				label      	"School")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"353D5816026C"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$9" @3
+			    location   	(793, 541)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B5682EA0328"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$11" @4
+				    Parent_View 	@3
+				    location   	(-439, 221)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @5
+					Parent_View 	@4
+					location   	(622, 583)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5682ED009A"
+				    client     	@3
+				    supplier   	@2
+				    vertices   	(list Points
+					(793, 541)
+					(601, 639))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$10" @6
+				    Parent_View 	@3
+				    location   	(-439, 221)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @7
+					Parent_View 	@6
+					location   	(929, 427)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5682ED0098"
+				    client     	@3
+				    supplier   	@1
+				    vertices   	(list Points
+					(793, 541)
+					(986, 444))
+				    line_style 	0)))
+			(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::International cooperation::update international cooperation" @8
+			    location   	(1184, 800)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@8
+				location   	(1184, 938)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"update international cooperation")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56DABB01FC")
+			(object AssociationViewNew "$UNNAMED$15" @9
+			    location   	(837, 728)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DADF00E4"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$16" @10
+				    Parent_View 	@9
+				    location   	(293, 56)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56DADF02C9"
+				    client     	@9
+				    supplier   	@8
+				    vertices   	(list Points
+					(837, 728)
+					(1074, 775))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$17" @11
+				    Parent_View 	@9
+				    location   	(293, 56)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56DADF02CB"
+				    client     	@9
+				    supplier   	@2
+				    vertices   	(list Points
+					(837, 728)
+					(601, 682))
+				    line_style 	0)))))))
+	(object Class_Category "Operating conditions"
+	    quid       	"5B56D66300CC"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "Add Operating conditions"
+		    quid       	"5B567FE80299")
+		(object UseCase "Update Operating conditions"
+		    quid       	"5B56D78B016E")
+		(object Association "$UNNAMED$18"
+		    quid       	"5B56D7E6021D"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$19"
+			    quid       	"5B56D7E70094"
+			    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Operating conditions::Update Operating conditions"
+			    quidu      	"5B56D78B016E"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$20"
+			    quid       	"5B56D7E70096"
+			    supplier   	"Use Case View::SICS::Actors::School"
+			    quidu      	"353D5816026C"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Operating conditions"
+		    quid       	"5B56D7D101BB"
+		    title      	"Operating conditions"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Operating conditions::Add Operating conditions" @12
+			    location   	(1200, 448)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@12
+				location   	(1200, 586)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Add Operating conditions")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B567FE80299")
+			(object ClassView "Class" "Use Case View::SICS::Actors::School" @13
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(336, 704)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@13
+				location   	(336, 864)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	335
+				justify    	0
+				label      	"School")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"353D5816026C"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$0" @14
+			    location   	(689, 596)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B5682CC0354"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$2" @15
+				    Parent_View 	@14
+				    location   	(-511, 148)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @16
+					Parent_View 	@15
+					location   	(441, 628)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5682CD0246"
+				    client     	@14
+				    supplier   	@13
+				    vertices   	(list Points
+					(689, 596)
+					(393, 685))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$1" @17
+				    Parent_View 	@14
+				    location   	(-511, 148)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @18
+					Parent_View 	@17
+					location   	(916, 486)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5682CD0244"
+				    client     	@14
+				    supplier   	@12
+				    vertices   	(list Points
+					(689, 596)
+					(986, 507))
+				    line_style 	0)))
+			(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Operating conditions::Update Operating conditions" @19
+			    location   	(1216, 816)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@19
+				location   	(1216, 954)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Update Operating conditions")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56D78B016E")
+			(object AssociationViewNew "$UNNAMED$18" @20
+			    location   	(748, 753)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56D7E6021D"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$19" @21
+				    Parent_View 	@20
+				    location   	(412, 49)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56D7E70094"
+				    client     	@20
+				    supplier   	@19
+				    vertices   	(list Points
+					(748, 753)
+					(1104, 799))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$20" @22
+				    Parent_View 	@20
+				    location   	(412, 49)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56D7E70096"
+				    client     	@20
+				    supplier   	@13
+				    vertices   	(list Points
+					(748, 753)
+					(393, 708))
+				    line_style 	0)))))))
+	(object Class_Category "Professional grade and curriculum construction"
+	    quid       	"5B56D67701A9"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "Add professional grade and curriculum construction"
+		    quid       	"5B567FFE0041")
+		(object UseCase "Update professional grade and curriculum construction"
+		    quid       	"5B56D814011F")
+		(object Association "$UNNAMED$21"
+		    quid       	"5B56D8500343"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$22"
+			    quid       	"5B56D851038F"
+			    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Professional grade and curriculum construction::Update professional grade and curriculum construction"
+			    quidu      	"5B56D814011F"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$23"
+			    quid       	"5B56D8510391"
+			    supplier   	"Use Case View::SICS::Actors::School"
+			    quidu      	"353D5816026C"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Professional grade and curriculum construction"
+		    quid       	"5B56D825011C"
+		    title      	"Professional grade and curriculum construction"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Professional grade and curriculum construction::Add professional grade and curriculum construction" @23
+			    location   	(1264, 432)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@23
+				location   	(1264, 570)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Add professional grade and curriculum construction")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B567FFE0041")
+			(object ClassView "Class" "Use Case View::SICS::Actors::School" @24
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(432, 608)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@24
+				location   	(432, 768)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	339
+				justify    	0
+				label      	"School")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"353D5816026C"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$3" @25
+			    location   	(821, 523)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B5682DA0292"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$5" @26
+				    Parent_View 	@25
+				    location   	(-443, 91)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @27
+					Parent_View 	@26
+					location   	(548, 539)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5682DB0315"
+				    client     	@25
+				    supplier   	@24
+				    vertices   	(list Points
+					(821, 523)
+					(489, 593))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$4" @28
+				    Parent_View 	@25
+				    location   	(-443, 91)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @29
+					Parent_View 	@28
+					location   	(1079, 428)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5682DB0313"
+				    client     	@25
+				    supplier   	@23
+				    vertices   	(list Points
+					(821, 523)
+					(1154, 454))
+				    line_style 	0)))
+			(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Professional grade and curriculum construction::Update professional grade and curriculum construction" @30
+			    location   	(1264, 848)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@30
+				location   	(1264, 986)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Update professional grade and curriculum construction")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56D814011F")
+			(object AssociationViewNew "$UNNAMED$21" @31
+			    location   	(821, 719)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56D8500343"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$22" @32
+				    Parent_View 	@31
+				    location   	(389, 111)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56D851038F"
+				    client     	@31
+				    supplier   	@30
+				    vertices   	(list Points
+					(821, 719)
+					(1154, 815))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$23" @33
+				    Parent_View 	@31
+				    location   	(389, 111)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56D8510391"
+				    client     	@31
+				    supplier   	@24
+				    vertices   	(list Points
+					(821, 719)
+					(489, 623))
+				    line_style 	0)))))))
+	(object Class_Category "Related vocational education groups"
+	    quid       	"5B56D68802F7"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "Add related vocational education groups"
+		    quid       	"5B56802000BA")
+		(object UseCase "Update related vocational education groups"
+		    quid       	"5B56D8EE03D7")
+		(object Association "$UNNAMED$24"
+		    quid       	"5B56D9120054"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$25"
+			    quid       	"5B56D9120377"
+			    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Related vocational education groups::Update related vocational education groups"
+			    quidu      	"5B56D8EE03D7"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$26"
+			    quid       	"5B56D9120379"
+			    supplier   	"Use Case View::SICS::Actors::School"
+			    quidu      	"353D5816026C"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Related vocational education groups"
+		    quid       	"5B56D8D1009F"
+		    title      	"Related vocational education groups"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Related vocational education groups::Add related vocational education groups" @34
+			    location   	(1216, 336)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@34
+				location   	(1216, 474)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Add related vocational education groups")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56802000BA")
+			(object ClassView "Class" "Use Case View::SICS::Actors::School" @35
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(384, 544)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@35
+				location   	(384, 704)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	343
+				justify    	0
+				label      	"School")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"353D5816026C"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$6" @36
+			    location   	(690, 465)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B5682E20130"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$8" @37
+				    Parent_View 	@36
+				    location   	(-526, 129)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @38
+					Parent_View 	@37
+					location   	(482, 475)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5682E30107"
+				    client     	@36
+				    supplier   	@35
+				    vertices   	(list Points
+					(690, 465)
+					(441, 527))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$7" @39
+				    Parent_View 	@36
+				    location   	(-526, 129)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @40
+					Parent_View 	@39
+					location   	(881, 375)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5682E30105"
+				    client     	@36
+				    supplier   	@34
+				    vertices   	(list Points
+					(690, 465)
+					(940, 403))
+				    line_style 	0)))
+			(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Related vocational education groups::Update related vocational education groups" @41
+			    location   	(1232, 816)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@41
+				location   	(1232, 954)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Update related vocational education groups")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56D8EE03D7")
+			(object AssociationViewNew "$UNNAMED$24" @42
+			    location   	(781, 669)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56D9120054"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$25" @43
+				    Parent_View 	@42
+				    location   	(397, 125)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56D9120377"
+				    client     	@42
+				    supplier   	@41
+				    vertices   	(list Points
+					(781, 669)
+					(1122, 779))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$26" @44
+				    Parent_View 	@42
+				    location   	(397, 125)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56D9120379"
+				    client     	@42
+				    supplier   	@35
+				    vertices   	(list Points
+					(781, 669)
+					(441, 560))
+				    line_style 	0)))))))
+	(object Class_Category "School-enterprise cooperation"
+	    quid       	"5B56D6A803CD"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "School-enterprise cooperation"
+		    quid       	"5B5680AF0370"))
+	    logical_presentations 	(list unit_reference_list)))
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "Basic situation of school"
+	    quid       	"5B56DFCC011C"
+	    title      	"Basic situation of school"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::International cooperation" @45
+		    location   	(384, 512)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@45
+			location   	(240, 428)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"International cooperation")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B56D63B0103"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Operating conditions" @46
+		    location   	(848, 512)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@46
+			location   	(704, 428)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"Operating conditions")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B56D66300CC"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Professional grade and curriculum construction" @47
+		    location   	(1376, 512)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@47
+			location   	(1129, 428)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	494
+			justify    	0
+			label      	"Professional grade and curriculum construction")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B56D67701A9"
+		    width      	506
+		    height     	180)
+		(object CategoryView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::Related vocational education groups" @48
+		    location   	(416, 928)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@48
+			location   	(234, 844)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	364
+			justify    	0
+			label      	"Related vocational education groups")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B56D68802F7"
+		    width      	376
+		    height     	180)
+		(object CategoryView "Use Case View::SICS::Use Cases::Basic information management::Basic situation of school::School-enterprise cooperation" @49
+		    location   	(928, 928)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@49
+			location   	(742, 844)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	372
+			justify    	0
+			label      	"School-enterprise cooperation")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B56D6A803CD"
+		    width      	384
+		    height     	180)))))

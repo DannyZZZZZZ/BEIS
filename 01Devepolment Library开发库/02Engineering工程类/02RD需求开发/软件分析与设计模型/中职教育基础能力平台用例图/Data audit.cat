@@ -1,0 +1,1720 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "Data audit"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5B55CE7501A9"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Association "$UNNAMED$0"
+	    quid       	"5B568F070024"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"5B568F070207"
+		    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Login"
+		    quidu      	"5B56889E01E0"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"5B568F070209"
+		    supplier   	"Use Case View::SICS::Actors::Country"
+		    quidu      	"5B55CDBA02B8")))
+	(object Association "$UNNAMED$3"
+	    quid       	"5B5690590355"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"5B56905A01FC"
+		    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Audit school data"
+		    quidu      	"5B568F170345"
+		    is_navigable 	TRUE)
+		(object Role "theCountry"
+		    quid       	"5B56905A01FE"
+		    label      	"theCountry"
+		    supplier   	"Use Case View::SICS::Actors::Country"
+		    quidu      	"5B55CDBA02B8")))
+	(object Association "$UNNAMED$5"
+	    quid       	"5B569262034F"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$6"
+		    quid       	"5B56926301B7"
+		    supplier   	"Use Case View::SICS::Actors::Admin"
+		    quidu      	"5B55CDCD02E5"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$7"
+		    quid       	"5B56926301C7"
+		    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Upload opinion"
+		    quidu      	"5B5690FC005D")))
+	(object Association "$UNNAMED$8"
+	    quid       	"5B5693F10016"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$9"
+		    quid       	"5B5693F10276"
+		    supplier   	"Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Get audit data"
+		    quidu      	"5B56921403BC"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$10"
+		    quid       	"5B5693F10278"
+		    supplier   	"Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Audit project data again"
+		    quidu      	"5B569218001D")))
+	(object Association "$UNNAMED$11"
+	    quid       	"5B5693FA0065"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$12"
+		    quid       	"5B5693FA02A6"
+		    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Login"
+		    quidu      	"5B56889E01E0"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$13"
+		    quid       	"5B5693FA02A8"
+		    supplier   	"Use Case View::SICS::Actors::Admin"
+		    quidu      	"5B55CDCD02E5")))
+	(object Association "$UNNAMED$14"
+	    quid       	"5B5693FC0293"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$15"
+		    quid       	"5B5693FD0253"
+		    supplier   	"Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Audit project data again"
+		    quidu      	"5B569218001D"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$16"
+		    quid       	"5B5693FD0255"
+		    supplier   	"Use Case View::SICS::Actors::Admin"
+		    quidu      	"5B55CDCD02E5")))
+	(object Association "$UNNAMED$17"
+	    quid       	"5B569B090384"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$18"
+		    quid       	"5B569B0A0282"
+		    supplier   	"Use Case View::SICS::Use Cases::Data audit::Senior leadership review::Check project"
+		    quidu      	"5B5699530080"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$19"
+		    quid       	"5B569B0A0284"
+		    supplier   	"Use Case View::SICS::Actors::Leader"
+		    quidu      	"5B55CDD701A0")))
+	(object Association "$UNNAMED$20"
+	    quid       	"5B569B0D029D"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$21"
+		    quid       	"5B569B0E021B"
+		    supplier   	"Use Case View::SICS::Use Cases::Data audit::Senior leadership review::Choose project"
+		    quidu      	"5B56996D019E"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$22"
+		    quid       	"5B569B0E021D"
+		    supplier   	"Use Case View::SICS::Actors::Leader"
+		    quidu      	"5B55CDD701A0")))
+	(object Association "$UNNAMED$23"
+	    quid       	"5B569B630133"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$24"
+		    quid       	"5B569B64006B"
+		    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Login"
+		    quidu      	"5B56889E01E0"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$25"
+		    quid       	"5B569B64006D"
+		    supplier   	"Use Case View::SICS::Actors::Leader"
+		    quidu      	"5B55CDD701A0")))
+	(object Class_Category "District and county audit"
+	    quid       	"5B5688740020"
+	    documentation 	"区县审核"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "Login"
+		    quid       	"5B56889E01E0"
+		    documentation 	
+|登陆系统
+|
+		    )
+		(object UseCase "Audit school data"
+		    quid       	"5B568F170345"
+		    documentation 	
+|审核数据
+|
+		    
+		    visible_modules 	(list dependency_list
+			(object Dependency_Relationship
+			    quid       	"5B5690E202B8"
+			    stereotype 	"include"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Get data"
+			    quidu      	"5B568F1A014D")
+			(object Dependency_Relationship
+			    quid       	"5B569139021D"
+			    stereotype 	"include"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Upload opinion"
+			    quidu      	"5B5690FC005D")))
+		(object UseCase "Get data"
+		    quid       	"5B568F1A014D"
+		    documentation 	
+|获取待审核数据
+|
+		    )
+		(object UseCase "Upload opinion"
+		    quid       	"5B5690FC005D"
+		    documentation 	
+|上传审核意见
+|
+|
+		    
+		    visible_modules 	(list dependency_list
+			(object Dependency_Relationship
+			    quid       	"5B5699BF00FC"
+			    stereotype 	"extend"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Audit school data"
+			    quidu      	"5B568F170345")))
+		(object UseCase "Audit project data"
+		    quid       	"5B57CA1C001C"
+		    documentation 	"审核所属学校项目数据"
+		    visible_modules 	(list dependency_list
+			(object Dependency_Relationship
+			    quid       	"5B57CA5B0360"
+			    stereotype 	"include"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Get data"
+			    quidu      	"5B568F1A014D")
+			(object Dependency_Relationship
+			    quid       	"5B57CAE903A5"
+			    stereotype 	"include"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Upload opinion"
+			    quidu      	"5B5690FC005D")))
+		(object Association "$UNNAMED$26"
+		    quid       	"5B57CA520320"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$27"
+			    quid       	"5B57CA5302E0"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Audit project data"
+			    quidu      	"5B57CA1C001C"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$28"
+			    quid       	"5B57CA5302E2"
+			    supplier   	"Use Case View::SICS::Actors::Country"
+			    quidu      	"5B55CDBA02B8")))
+		(object Association "$UNNAMED$29"
+		    quid       	"5B57CB2902F1"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$30"
+			    quid       	"5B57CB2A0253"
+			    supplier   	"Use Case View::SICS::Actors::School"
+			    quidu      	"353D5816026C"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$31"
+			    quid       	"5B57CB2A0263"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::District and county audit::Upload opinion"
+			    quidu      	"5B5690FC005D"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "District and county audit"
+		    quid       	"5B5688AD01D7"
+		    title      	"District and county audit"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	88
+		    origin_y   	113
+		    items      	(list diagram_item_list
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::District and county audit::Login" @1
+			    location   	(912, 224)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(912, 362)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Login")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56889E01E0")
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::District and county audit::Audit school data" @2
+			    location   	(896, 704)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(896, 842)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Audit school data")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B568F170345")
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::District and county audit::Get data" @3
+			    location   	(1648, 576)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@3
+				location   	(1648, 714)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Get data")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B568F1A014D")
+			(object DependencyView "" @4
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @5
+				Parent_View 	@4
+				location   	(1249, 692)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<include>>"
+				pctDist    	0.442927
+				height     	52
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"5B5690E202B8"
+			    client     	@2
+			    supplier   	@3
+			    vertices   	(list Points
+				(1004, 681)
+				(1537, 591))
+			    line_style 	0)
+			(object ClassView "Class" "Use Case View::SICS::Actors::Admin" @6
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2304, 1200)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@6
+				location   	(2304, 1360)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"Admin")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5B55CDCD02E5"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::SICS::Actors::Country" @7
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(192, 704)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@7
+				location   	(192, 864)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"Country")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5B55CDBA02B8"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$0" @8
+			    location   	(535, 470)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B568F070024"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$1" @9
+				    Parent_View 	@8
+				    location   	(263, 38)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B568F070207"
+				    client     	@8
+				    supplier   	@1
+				    vertices   	(list Points
+					(535, 470)
+					(821, 280))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$2" @10
+				    Parent_View 	@8
+				    location   	(263, 38)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B568F070209"
+				    client     	@8
+				    supplier   	@7
+				    vertices   	(list Points
+					(535, 470)
+					(249, 660))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$3" @11
+			    location   	(517, 704)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B5690590355"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$4" @12
+				    Parent_View 	@11
+				    location   	(261, 224)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56905A01FC"
+				    client     	@11
+				    supplier   	@2
+				    vertices   	(list Points
+					(517, 704)
+					(786, 704))
+				    line_style 	0)
+				(object RoleView "theCountry" @13
+				    Parent_View 	@11
+				    location   	(261, 224)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56905A01FE"
+				    client     	@11
+				    supplier   	@7
+				    vertices   	(list Points
+					(517, 704)
+					(249, 704))
+				    line_style 	0)))
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::District and county audit::Audit project data" @14
+			    location   	(912, 1152)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@14
+				location   	(912, 1290)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Audit project data")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B57CA1C001C")
+			(object AssociationViewNew "$UNNAMED$26" @15
+			    location   	(533, 916)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B57CA520320"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$27" @16
+				    Parent_View 	@15
+				    location   	(341, 212)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B57CA5302E0"
+				    client     	@15
+				    supplier   	@14
+				    vertices   	(list Points
+					(533, 916)
+					(817, 1093))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$28" @17
+				    Parent_View 	@15
+				    location   	(341, 212)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B57CA5302E2"
+				    client     	@15
+				    supplier   	@7
+				    vertices   	(list Points
+					(533, 916)
+					(249, 739))
+				    line_style 	0)))
+			(object DependencyView "" @18
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @19
+				Parent_View 	@18
+				location   	(1437, 828)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<include>>"
+				pctDist    	0.700711
+				height     	73
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"5B57CA5B0360"
+			    client     	@14
+			    supplier   	@3
+			    vertices   	(list Points
+				(979, 1094)
+				(1568, 632))
+			    line_style 	0)
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::District and county audit::Upload opinion" @20
+			    location   	(1648, 1088)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@20
+				location   	(1648, 1226)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Upload opinion")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B5690FC005D")
+			(object AssociationViewNew "$UNNAMED$5" @21
+			    location   	(1999, 1145)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B569262034F"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$6" @22
+				    Parent_View 	@21
+				    location   	(351, 169)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56926301B7"
+				    client     	@21
+				    supplier   	@6
+				    vertices   	(list Points
+					(1999, 1145)
+					(2243, 1187))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$7" @23
+				    Parent_View 	@21
+				    location   	(351, 169)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56926301C7"
+				    client     	@21
+				    supplier   	@20
+				    vertices   	(list Points
+					(1999, 1145)
+					(1756, 1104))
+				    line_style 	0)))
+			(object DependencyView "" @24
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @25
+				Parent_View 	@24
+				location   	(1284, 942)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<include>>"
+				pctDist    	0.515614
+				height     	38
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"5B569139021D"
+			    client     	@2
+			    supplier   	@20
+			    vertices   	(list Points
+				(1048, 779)
+				(1539, 1030))
+			    line_style 	0)
+			(object DependencyView "" @26
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @27
+				Parent_View 	@26
+				location   	(1260, 1073)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<include>>"
+				pctDist    	0.471859
+				height     	45
+				orientation 	0)
+			    line_color 	3342489
+			    quidu      	"5B57CAE903A5"
+			    client     	@14
+			    supplier   	@20
+			    vertices   	(list Points
+				(1020, 1138)
+				(1536, 1093))
+			    line_style 	0)
+			(object ClassView "Class" "Use Case View::SICS::Actors::School" @28
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2240, 640)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@28
+				location   	(2240, 800)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"School")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"353D5816026C"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$29" @29
+			    location   	(1950, 854)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B57CB2902F1"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$30" @30
+				    Parent_View 	@29
+				    location   	(302, -122)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B57CB2A0253"
+				    client     	@29
+				    supplier   	@28
+				    vertices   	(list Points
+					(1950, 854)
+					(2181, 680))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$31" @31
+				    Parent_View 	@29
+				    location   	(302, -122)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B57CB2A0263"
+				    client     	@29
+				    supplier   	@20
+				    vertices   	(list Points
+					(1950, 854)
+					(1720, 1029))
+				    line_style 	0)))))))
+	(object Class_Category "Municipal bureau review"
+	    quid       	"5B56918E002F"
+	    documentation 	"市局审核数据"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "Get audit data"
+		    quid       	"5B56921403BC"
+		    documentation 	"获取通过待审核数据及区县审核意见")
+		(object UseCase "Audit project data again"
+		    quid       	"5B569218001D"
+		    documentation 	
+|再次审核数据
+|
+		    
+		    visible_modules 	(list dependency_list
+			(object Dependency_Relationship
+			    quid       	"5B5693FF03D6"
+			    stereotype 	"include"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Get audit data"
+			    quidu      	"5B56921403BC")
+			(object Dependency_Relationship
+			    quid       	"5B56940B00F5"
+			    stereotype 	"include"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Save Audit Result"
+			    quidu      	"5B5693E10158")))
+		(object UseCase "Save Audit Result"
+		    quid       	"5B5693E10158"
+		    documentation 	"提出审核意见，驳回或通过审核入库")
+		(object UseCase "Audit school data"
+		    quid       	"5B57D040026A"
+		    documentation 	"审核直属学校数据"
+		    visible_modules 	(list dependency_list
+			(object Dependency_Relationship
+			    quid       	"5B57D0AB021C"
+			    stereotype 	"include"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Get audit data"
+			    quidu      	"5B56921403BC")
+			(object Dependency_Relationship
+			    quid       	"5B57D0BB030C"
+			    stereotype 	"include"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Save Audit Result"
+			    quidu      	"5B5693E10158")))
+		(object Association "$UNNAMED$32"
+		    quid       	"5B57D0A50320"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$33"
+			    quid       	"5B57D0A602EF"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Audit school data"
+			    quidu      	"5B57D040026A"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$34"
+			    quid       	"5B57D0A602F1"
+			    supplier   	"Use Case View::SICS::Actors::Admin"
+			    quidu      	"5B55CDCD02E5"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Municipal bureau review"
+		    quid       	"5B5691B702CA"
+		    title      	"Municipal bureau review"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	419
+		    items      	(list diagram_item_list
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Save Audit Result" @32
+			    location   	(1664, 1104)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@32
+				location   	(1664, 1242)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Save Audit Result")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B5693E10158")
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Get audit data" @33
+			    location   	(1616, 656)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@33
+				location   	(1616, 794)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Get audit data")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56921403BC")
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::District and county audit::Login" @34
+			    location   	(816, 384)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@34
+				location   	(816, 522)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Login")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56889E01E0")
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Audit project data again" @35
+			    location   	(832, 928)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@35
+				location   	(832, 1066)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Audit project data again")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B569218001D")
+			(object DependencyView "" @36
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @37
+				Parent_View 	@36
+				location   	(1191, 737)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<include>>"
+				pctDist    	0.476875
+				height     	60
+				orientation 	0)
+			    line_color 	3342489
+			    quidu      	"5B5693FF03D6"
+			    client     	@35
+			    supplier   	@33
+			    vertices   	(list Points
+				(940, 887)
+				(1506, 691))
+			    line_style 	0)
+			(object DependencyView "" @38
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @39
+				Parent_View 	@38
+				location   	(1291, 971)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<include>>"
+				pctDist    	0.555268
+				height     	52
+				orientation 	0)
+			    line_color 	3342489
+			    quidu      	"5B56940B00F5"
+			    client     	@35
+			    supplier   	@32
+			    vertices   	(list Points
+				(940, 950)
+				(1554, 1078))
+			    line_style 	0)
+			(object ClassView "Class" "Use Case View::SICS::Actors::Admin" @40
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(224, 912)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@40
+				location   	(224, 1072)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"Admin")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5B55CDCD02E5"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$11" @41
+			    location   	(434, 723)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B5693FA0065"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$12" @42
+				    Parent_View 	@41
+				    location   	(98, 35)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5693FA02A6"
+				    client     	@41
+				    supplier   	@34
+				    vertices   	(list Points
+					(434, 723)
+					(588, 587))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$13" @43
+				    Parent_View 	@41
+				    location   	(98, 35)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5693FA02A8"
+				    client     	@41
+				    supplier   	@40
+				    vertices   	(list Points
+					(434, 723)
+					(281, 859))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$14" @44
+			    location   	(501, 917)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B5693FC0293"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$15" @45
+				    Parent_View 	@44
+				    location   	(165, 229)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5693FD0253"
+				    client     	@44
+				    supplier   	@35
+				    vertices   	(list Points
+					(501, 917)
+					(721, 922))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$16" @46
+				    Parent_View 	@44
+				    location   	(165, 229)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5693FD0255"
+				    client     	@44
+				    supplier   	@40
+				    vertices   	(list Points
+					(501, 917)
+					(281, 912))
+				    line_style 	0)))
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::Municipal bureau review::Audit school data" @47
+			    location   	(832, 1408)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@47
+				location   	(832, 1546)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Audit school data")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B57D040026A")
+			(object AssociationViewNew "$UNNAMED$32" @48
+			    location   	(519, 1153)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B57D0A50320"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$33" @49
+				    Parent_View 	@48
+				    location   	(295, 241)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B57D0A602EF"
+				    client     	@48
+				    supplier   	@47
+				    vertices   	(list Points
+					(519, 1153)
+					(758, 1349))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$34" @50
+				    Parent_View 	@48
+				    location   	(295, 241)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B57D0A602F1"
+				    client     	@48
+				    supplier   	@40
+				    vertices   	(list Points
+					(519, 1153)
+					(281, 958))
+				    line_style 	0)))
+			(object DependencyView "" @51
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @52
+				Parent_View 	@51
+				location   	(1180, 1114)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<include>>"
+				pctDist    	0.448650
+				height     	31
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"5B57D0AB021C"
+			    client     	@47
+			    supplier   	@33
+			    vertices   	(list Points
+				(888, 1348)
+				(1491, 776))
+			    line_style 	0)
+			(object DependencyView "" @53
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @54
+				Parent_View 	@53
+				location   	(1236, 1308)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<include>>"
+				pctDist    	0.491211
+				height     	47
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"5B57D0BB030C"
+			    client     	@47
+			    supplier   	@32
+			    vertices   	(list Points
+				(940, 1367)
+				(1510, 1158))
+			    line_style 	0)))))
+	(object Class_Category "Senior leadership review"
+	    quid       	"5B5691910384"
+	    documentation 	"高级领导审核数据"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "Check project"
+		    quid       	"5B5699530080"
+		    documentation 	
+|查看项目
+|
+		    )
+		(object UseCase "Choose project"
+		    quid       	"5B56996D019E"
+		    documentation 	"选择项目")
+		(object UseCase "Upload feedback"
+		    quid       	"5B56997E01F0"
+		    documentation 	"提交反馈意见"
+		    visible_modules 	(list dependency_list
+			(object Dependency_Relationship
+			    quid       	"5B569B110313"
+			    stereotype 	"extend"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::Senior leadership review::Choose project"
+			    quidu      	"5B56996D019E")))
+		(object UseCase "Agree to end"
+		    quid       	"5B56999A01E3"
+		    documentation 	"同意结题"
+		    visible_modules 	(list dependency_list
+			(object Dependency_Relationship
+			    quid       	"5B569B1E0353"
+			    stereotype 	"extend"
+			    supplier   	"Use Case View::SICS::Use Cases::Data audit::Senior leadership review::Choose project"
+			    quidu      	"5B56996D019E"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Senior leadership review"
+		    quid       	"5B5698840267"
+		    title      	"Senior leadership review"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::Senior leadership review::Upload feedback" @55
+			    location   	(1856, 880)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@55
+				location   	(1856, 1018)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Upload feedback")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56997E01F0")
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::Senior leadership review::Agree to end" @56
+			    location   	(1824, 1296)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@56
+				location   	(1824, 1434)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Agree to end")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56999A01E3")
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::Senior leadership review::Check project" @57
+			    location   	(1088, 480)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@57
+				location   	(1088, 618)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Check project")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B5699530080")
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::Senior leadership review::Choose project" @58
+			    location   	(1024, 976)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@58
+				location   	(1024, 1114)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Choose project")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56996D019E")
+			(object DependencyView "" @59
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @60
+				Parent_View 	@59
+				location   	(1416, 900)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<extend>>"
+				pctDist    	0.534842
+				height     	29
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"5B569B110313"
+			    client     	@55
+			    supplier   	@58
+			    vertices   	(list Points
+				(1746, 891)
+				(1132, 961))
+			    line_style 	0)
+			(object DependencyView "" @61
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @62
+				Parent_View 	@61
+				location   	(1477, 1134)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<extend>>"
+				pctDist    	0.440474
+				height     	20
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"5B569B1E0353"
+			    client     	@56
+			    supplier   	@58
+			    vertices   	(list Points
+				(1714, 1250)
+				(1344, 1101))
+			    line_style 	0)
+			(object UseCaseView "Use Case View::SICS::Use Cases::Data audit::District and county audit::Login" @63
+			    location   	(1056, 64)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@63
+				location   	(1056, 202)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Login")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56889E01E0")
+			(object ClassView "Class" "Use Case View::SICS::Actors::Leader" @64
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(400, 480)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@64
+				location   	(400, 640)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"Leader")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5B55CDD701A0"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$17" @65
+			    location   	(716, 480)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B569B090384"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$18" @66
+				    Parent_View 	@65
+				    location   	(332, 64)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B569B0A0282"
+				    client     	@65
+				    supplier   	@57
+				    vertices   	(list Points
+					(716, 480)
+					(976, 480))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$19" @67
+				    Parent_View 	@65
+				    location   	(332, 64)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B569B0A0284"
+				    client     	@65
+				    supplier   	@64
+				    vertices   	(list Points
+					(716, 480)
+					(457, 480))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$20" @68
+			    location   	(703, 721)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B569B0D029D"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$21" @69
+				    Parent_View 	@68
+				    location   	(319, 305)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B569B0E021B"
+				    client     	@68
+				    supplier   	@58
+				    vertices   	(list Points
+					(703, 721)
+					(952, 918))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$22" @70
+				    Parent_View 	@68
+				    location   	(319, 305)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B569B0E021D"
+				    client     	@68
+				    supplier   	@64
+				    vertices   	(list Points
+					(703, 721)
+					(457, 526))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$23" @71
+			    location   	(709, 280)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B569B630133"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$24" @72
+				    Parent_View 	@71
+				    location   	(309, -200)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B569B64006B"
+				    client     	@71
+				    supplier   	@63
+				    vertices   	(list Points
+					(709, 280)
+					(797, 225))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$25" @73
+				    Parent_View 	@71
+				    location   	(309, -200)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B569B64006D"
+				    client     	@71
+				    supplier   	@64
+				    vertices   	(list Points
+					(709, 280)
+					(457, 439))
+				    line_style 	0))))))))
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "Data audit"
+	    quid       	"5B56E3C50035"
+	    title      	"Data audit"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Use Case View::SICS::Use Cases::Data audit::Municipal bureau review" @74
+		    location   	(608, 832)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@74
+			location   	(464, 748)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"Municipal bureau review")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B56918E002F"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Use Case View::SICS::Use Cases::Data audit::Senior leadership review" @75
+		    location   	(1296, 784)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@75
+			location   	(1114, 700)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	364
+			justify    	0
+			label      	"Senior leadership review")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B5691910384"
+		    width      	376
+		    height     	180)
+		(object CategoryView "Use Case View::SICS::Use Cases::Data audit::District and county audit" @76
+		    location   	(656, 416)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@76
+			location   	(512, 332)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"District and county audit")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B5688740020"
+		    width      	300
+		    height     	180)))))
