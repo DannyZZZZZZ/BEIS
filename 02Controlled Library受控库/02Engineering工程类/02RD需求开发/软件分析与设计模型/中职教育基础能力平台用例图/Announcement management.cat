@@ -1,0 +1,706 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "Announcement management"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5B55CE61003A"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "Announcement"
+	    quid       	"5B569C9E0098"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "Create announcement"
+		    quid       	"5B56D6350095"
+		    documentation 	"新建公告")
+		(object Association "$UNNAMED$0"
+		    quid       	"5B56D6EE0256"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$1"
+			    quid       	"5B56D6EF00B4"
+			    supplier   	"Use Case View::SICS::Use Cases::Announcement management::Announcement::Create announcement"
+			    quidu      	"5B56D6350095"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$2"
+			    quid       	"5B56D6EF00B6"
+			    supplier   	"Use Case View::SICS::Actors::Admin"
+			    quidu      	"5B55CDCD02E5")))
+		(object Association "$UNNAMED$3"
+		    quid       	"5B583883017A"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$4"
+			    quid       	"5B583884004B"
+			    supplier   	"Use Case View::SICS::Actors::Country"
+			    quidu      	"5B55CDBA02B8"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$5"
+			    quid       	"5B5838840058"
+			    supplier   	"Use Case View::SICS::Use Cases::Announcement management::Announcement::Create announcement"
+			    quidu      	"5B56D6350095")))
+		(object Association "$UNNAMED$6"
+		    quid       	"5B58388503A9"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$7"
+			    quid       	"5B5838870050"
+			    supplier   	"Use Case View::SICS::Actors::Leader"
+			    quidu      	"5B55CDD701A0"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$8"
+			    quid       	"5B583887005A"
+			    supplier   	"Use Case View::SICS::Use Cases::Announcement management::Announcement::Create announcement"
+			    quidu      	"5B56D6350095")))
+		(object Association "$UNNAMED$9"
+		    quid       	"5B5838890027"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$10"
+			    quid       	"5B58388A011D"
+			    supplier   	"Use Case View::SICS::Actors::School"
+			    quidu      	"353D5816026C"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$11"
+			    quid       	"5B58388A012C"
+			    supplier   	"Use Case View::SICS::Use Cases::Announcement management::Announcement::Create announcement"
+			    quidu      	"5B56D6350095"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Announcement"
+		    quid       	"5B56D57702B0"
+		    title      	"Announcement"
+		    documentation 	"发布公共"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	63
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::SICS::Actors::Admin" @1
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(192, 848)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(192, 1008)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"Admin")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5B55CDCD02E5"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::SICS::Actors::Country" @2
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1424, 528)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(1424, 688)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"Country")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5B55CDBA02B8"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::SICS::Actors::Leader" @3
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1424, 848)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@3
+				location   	(1424, 1008)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"Leader")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5B55CDD701A0"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::SICS::Actors::School" @4
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1424, 1216)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@4
+				location   	(1424, 1376)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"School")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"353D5816026C"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object UseCaseView "Use Case View::SICS::Use Cases::Announcement management::Announcement::Create announcement" @5
+			    location   	(768, 848)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@5
+				location   	(768, 986)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Create announcement")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56D6350095")
+			(object AssociationViewNew "$UNNAMED$0" @6
+			    location   	(453, 848)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56D6EE0256"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$1" @7
+				    Parent_View 	@6
+				    location   	(261, 0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56D6EF00B4"
+				    client     	@6
+				    supplier   	@5
+				    vertices   	(list Points
+					(453, 848)
+					(657, 848))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$2" @8
+				    Parent_View 	@6
+				    location   	(261, 0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56D6EF00B6"
+				    client     	@6
+				    supplier   	@1
+				    vertices   	(list Points
+					(453, 848)
+					(249, 848))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$3" @9
+			    location   	(1119, 673)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B583883017A"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$4" @10
+				    Parent_View 	@9
+				    location   	(351, -175)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B583884004B"
+				    client     	@9
+				    supplier   	@2
+				    vertices   	(list Points
+					(1119, 673)
+					(1365, 553))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$5" @11
+				    Parent_View 	@9
+				    location   	(351, -175)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5838840058"
+				    client     	@9
+				    supplier   	@5
+				    vertices   	(list Points
+					(1119, 673)
+					(876, 792))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$6" @12
+			    location   	(1119, 848)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B58388503A9"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$7" @13
+				    Parent_View 	@12
+				    location   	(351, 0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B5838870050"
+				    client     	@12
+				    supplier   	@3
+				    vertices   	(list Points
+					(1119, 848)
+					(1365, 848))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$8" @14
+				    Parent_View 	@12
+				    location   	(351, 0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B583887005A"
+				    client     	@12
+				    supplier   	@5
+				    vertices   	(list Points
+					(1119, 848)
+					(876, 848))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$9" @15
+			    location   	(1161, 1067)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B5838890027"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$10" @16
+				    Parent_View 	@15
+				    location   	(393, 219)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B58388A011D"
+				    client     	@15
+				    supplier   	@4
+				    vertices   	(list Points
+					(1161, 1067)
+					(1365, 1182))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$11" @17
+				    Parent_View 	@15
+				    location   	(393, 219)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B58388A012C"
+				    client     	@15
+				    supplier   	@5
+				    vertices   	(list Points
+					(1161, 1067)
+					(1059, 1009))
+				    line_style 	0)))))))
+	(object Class_Category "Access to notices"
+	    quid       	"5B569CAF03A9"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "Check announcement"
+		    quid       	"5B56DB6A019F")
+		(object Association "$UNNAMED$12"
+		    quid       	"5B56DBA302D5"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$13"
+			    quid       	"5B56DBA4018E"
+			    supplier   	"Use Case View::SICS::Use Cases::Announcement management::Access to notices::Check announcement"
+			    quidu      	"5B56DB6A019F"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$14"
+			    quid       	"5B56DBA40190"
+			    supplier   	"Use Case View::SICS::Actors::Country"
+			    quidu      	"5B55CDBA02B8")))
+		(object Association "$UNNAMED$15"
+		    quid       	"5B56DBA600FB"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$16"
+			    quid       	"5B56DBA60373"
+			    supplier   	"Use Case View::SICS::Use Cases::Announcement management::Access to notices::Check announcement"
+			    quidu      	"5B56DB6A019F"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$17"
+			    quid       	"5B56DBA60375"
+			    supplier   	"Use Case View::SICS::Actors::School"
+			    quidu      	"353D5816026C")))
+		(object Association "$UNNAMED$18"
+		    quid       	"5B56DD60025A"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$19"
+			    quid       	"5B56DD6101DC"
+			    supplier   	"Use Case View::SICS::Use Cases::Announcement management::Access to notices::Check announcement"
+			    quidu      	"5B56DB6A019F"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$20"
+			    quid       	"5B56DD6101DF"
+			    supplier   	"Use Case View::SICS::Actors::Admin"
+			    quidu      	"5B55CDCD02E5"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Access to notices"
+		    quid       	"5B56D47C0192"
+		    title      	"Access to notices"
+		    documentation 	"查询公告"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::SICS::Actors::Country" @18
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(256, 768)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@18
+				location   	(256, 928)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"Country")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5B55CDBA02B8"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::SICS::Actors::School" @19
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(256, 1088)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@19
+				location   	(256, 1248)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"School")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"353D5816026C"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object UseCaseView "Use Case View::SICS::Use Cases::Announcement management::Access to notices::Check announcement" @20
+			    location   	(848, 768)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@20
+				location   	(848, 906)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"Check announcement")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5B56DB6A019F")
+			(object AssociationViewNew "$UNNAMED$12" @21
+			    location   	(525, 768)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DBA302D5"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$13" @22
+				    Parent_View 	@21
+				    location   	(269, 48)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56DBA4018E"
+				    client     	@21
+				    supplier   	@20
+				    vertices   	(list Points
+					(525, 768)
+					(738, 768))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$14" @23
+				    Parent_View 	@21
+				    location   	(269, 48)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56DBA40190"
+				    client     	@21
+				    supplier   	@18
+				    vertices   	(list Points
+					(525, 768)
+					(313, 768))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$15" @24
+			    location   	(486, 961)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DBA600FB"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$16" @25
+				    Parent_View 	@24
+				    location   	(214, -191)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56DBA60373"
+				    client     	@24
+				    supplier   	@20
+				    vertices   	(list Points
+					(486, 961)
+					(544, 929))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$17" @26
+				    Parent_View 	@24
+				    location   	(214, -191)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56DBA60375"
+				    client     	@24
+				    supplier   	@19
+				    vertices   	(list Points
+					(486, 961)
+					(313, 1052))
+				    line_style 	0)))
+			(object ClassView "Class" "Use Case View::SICS::Actors::Admin" @27
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(256, 448)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@27
+				location   	(256, 608)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"Admin")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5B55CDCD02E5"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$18" @28
+			    location   	(526, 593)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DD60025A"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$19" @29
+				    Parent_View 	@28
+				    location   	(238, 305)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56DD6101DC"
+				    client     	@28
+				    supplier   	@20
+				    vertices   	(list Points
+					(526, 593)
+					(743, 709))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$20" @30
+				    Parent_View 	@28
+				    location   	(238, 305)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5B56DD6101DF"
+				    client     	@28
+				    supplier   	@27
+				    vertices   	(list Points
+					(526, 593)
+					(313, 478))
+				    line_style 	0))))))))
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "Announcement management"
+	    quid       	"5B56DFFB007C"
+	    title      	"Announcement management"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Use Case View::SICS::Use Cases::Announcement management::Access to notices" @31
+		    location   	(400, 624)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@31
+			location   	(256, 540)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"Access to notices")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B569CAF03A9"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Use Case View::SICS::Use Cases::Announcement management::Announcement" @32
+		    location   	(912, 624)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@32
+			location   	(768, 540)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"Announcement")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B569C9E0098"
+		    width      	300
+		    height     	180)))))

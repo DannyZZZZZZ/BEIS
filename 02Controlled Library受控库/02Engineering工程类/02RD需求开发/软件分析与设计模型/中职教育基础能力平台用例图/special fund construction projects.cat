@@ -1,0 +1,393 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "special fund construction projects"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5B55D12C02E1"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object UseCase "Upload application template"
+	    quid       	"5B5694AC006A"
+	    documentation 	"上传项目申报模板")
+	(object UseCase "Add project application information"
+	    quid       	"5B5695EB02F6"
+	    documentation 	"填写项目申报信息"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"5B569A2C039B"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::download application template"
+		    quidu      	"5B5696370060")))
+	(object UseCase "download application template"
+	    quid       	"5B5696370060"
+	    documentation 	"下载项目申报模板")
+	(object UseCase "Upload project application material"
+	    quid       	"5B569656015F"
+	    documentation 	"上传项目申报附件")
+	(object UseCase "Download application template"
+	    quid       	"5B569A560175"
+	    documentation 	"下载项目申报模板")
+	(object UseCase "Download project application material"
+	    quid       	"5B569B1500F5"
+	    documentation 	"下载项目申报附件")
+	(object UseCase "Add project schedule situation"
+	    quid       	"5B56C9AF0168")
+	(object UseCase "Upload the material of complete part"
+	    quid       	"5B56CA190048")
+	(object Association "$UNNAMED$0"
+	    quid       	"5B5694DD03BA"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"5B5694DE0363"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Upload application template"
+		    quidu      	"5B5694AC006A"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"5B5694DE0365"
+		    supplier   	"Use Case View::SICS::Actors::Admin"
+		    quidu      	"5B55CDCD02E5")))
+	(object Association "$UNNAMED$3"
+	    quid       	"5B5696CC0235"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"5B5696CD02F6"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Add project application information"
+		    quidu      	"5B5695EB02F6"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"5B5696CD02F8"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Association "$UNNAMED$6"
+	    quid       	"5B569765030D"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"5B56976601FF"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::download application template"
+		    quidu      	"5B5696370060"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$8"
+		    quid       	"5B5697660201"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Add project application information"
+		    quidu      	"5B5695EB02F6"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$9"
+	    quid       	"5B569A3D007A"
+	    stereotype 	"include"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$10"
+		    quid       	"5B569A3D034B"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::download application template"
+		    quidu      	"5B5696370060"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$11"
+		    quid       	"5B569A3D034E"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Add project application information"
+		    quidu      	"5B5695EB02F6"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$12"
+	    quid       	"5B569A460261"
+	    stereotype 	"include"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"5B569A470233"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Upload project application material"
+		    quidu      	"5B569656015F"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$14"
+		    quid       	"5B569A470235"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Add project application information"
+		    quidu      	"5B5695EB02F6"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$15"
+	    quid       	"5B569A7001D1"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$16"
+		    quid       	"5B569A7100F3"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Download application template"
+		    quidu      	"5B569A560175"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$17"
+		    quid       	"5B569A7100F5"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Association "$UNNAMED$18"
+	    quid       	"5B569AB1024B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$19"
+		    quid       	"5B569AB2035B"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Add project application information"
+		    quidu      	"5B5695EB02F6"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$20"
+		    quid       	"5B569AB2035F"
+		    supplier   	"Use Case View::SICS::Actors::Country"
+		    quidu      	"5B55CDBA02B8")))
+	(object Association "$UNNAMED$21"
+	    quid       	"5B569AB501CA"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$22"
+		    quid       	"5B569AB60343"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Download application template"
+		    quidu      	"5B569A560175"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$23"
+		    quid       	"5B569AB60345"
+		    supplier   	"Use Case View::SICS::Actors::Country"
+		    quidu      	"5B55CDBA02B8")))
+	(object Association "$UNNAMED$24"
+	    quid       	"5B569B2D0221"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$25"
+		    quid       	"5B569B2E0108"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Download project application material"
+		    quidu      	"5B569B1500F5"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$26"
+		    quid       	"5B569B2E010A"
+		    supplier   	"Use Case View::SICS::Actors::Admin"
+		    quidu      	"5B55CDCD02E5")))
+	(object Association "$UNNAMED$27"
+	    quid       	"5B56CA130211"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$28"
+		    quid       	"5B56CA140129"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Add project schedule situation"
+		    quidu      	"5B56C9AF0168"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$29"
+		    quid       	"5B56CA14012B"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Association "$UNNAMED$30"
+	    quid       	"5B56CA4803AE"
+	    stereotype 	"include"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$31"
+		    quid       	"5B56CA490301"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Upload the material of complete part"
+		    quidu      	"5B56CA190048"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$32"
+		    quid       	"5B56CA490303"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Add project schedule situation"
+		    quidu      	"5B56C9AF0168"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$33"
+	    quid       	"5B56CA6D0014"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$34"
+		    quid       	"5B56CA6D0339"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Add project schedule situation"
+		    quidu      	"5B56C9AF0168"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$35"
+		    quid       	"5B56CA6D033C"
+		    supplier   	"Use Case View::SICS::Actors::Country"
+		    quidu      	"5B55CDBA02B8"))))
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "Project application Use Case"
+	    quid       	"5B569449002A"
+	    title      	"Project application Use Case"
+	    documentation 	"项目申报功能用况图"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Add project application information" @1
+		    location   	(1344, 1040)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(1344, 1178)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"Add project application information")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B5695EB02F6"
+		    height     	118)
+		(object ClassView "Class" "Use Case View::SICS::Actors::School" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(432, 1024)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(432, 1184)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	325
+			justify    	0
+			label      	"School")
+		    icon       	"Actor"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    quidu      	"353D5816026C"
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$3" @3
+		    location   	(860, 1030)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5B5696CC0235"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$4" @4
+			    Parent_View 	@3
+			    location   	(428, 6)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B5696CD02F6"
+			    client     	@3
+			    supplier   	@1
+			    vertices   	(list Points
+				(860, 1030)
+				(1232, 1036))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$5" @5
+			    Parent_View 	@3
+			    location   	(428, 6)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B5696CD02F8"
+			    client     	@3
+			    supplier   	@2
+			    vertices   	(list Points
+				(860, 1030)
+				(489, 1024))
+			    line_style 	0)))))
+	(object UseCaseDiagram "Project schedule Use Case"
+	    quid       	"5B569D34005B"
+	    title      	"Project schedule Use Case"
+	    documentation 	"项目进度管理用况图"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::special fund construction projects::Add project schedule situation" @6
+		    location   	(1504, 784)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(1504, 922)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"Add project schedule situation")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B56C9AF0168"
+		    height     	118)
+		(object ClassView "Class" "Use Case View::SICS::Actors::School" @7
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(576, 768)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(576, 928)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	325
+			justify    	0
+			label      	"School")
+		    icon       	"Actor"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    quidu      	"353D5816026C"
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$27" @8
+		    location   	(1013, 774)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5B56CA130211"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$28" @9
+			    Parent_View 	@8
+			    location   	(389, -26)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56CA140129"
+			    client     	@8
+			    supplier   	@6
+			    vertices   	(list Points
+				(1013, 774)
+				(1392, 780))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$29" @10
+			    Parent_View 	@8
+			    location   	(389, -26)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56CA14012B"
+			    client     	@8
+			    supplier   	@7
+			    vertices   	(list Points
+				(1013, 774)
+				(633, 768))
+			    line_style 	0)))))))

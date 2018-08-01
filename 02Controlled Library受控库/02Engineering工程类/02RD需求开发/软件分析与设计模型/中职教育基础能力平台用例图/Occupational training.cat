@@ -1,0 +1,202 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "Occupational training "
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5B56DD600006"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object UseCase "Add occupational training "
+	    quid       	"5B56DD8D023E")
+	(object UseCase "Update occupational training "
+	    quid       	"5B56DDA7015A")
+	(object Association "$UNNAMED$0"
+	    quid       	"5B56DDC7018E"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"5B56DDC800FB"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Occupational training ::Add occupational training "
+		    quidu      	"5B56DD8D023E"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"5B56DDC800FD"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Association "$UNNAMED$3"
+	    quid       	"5B56DDCB022F"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"5B56DDCC00B4"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Occupational training ::Update occupational training "
+		    quidu      	"5B56DDA7015A"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"5B56DDCC00B6"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C"))))
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "Occupational training "
+	    quid       	"5B56DDB40385"
+	    title      	"Occupational training "
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Occupational training ::Add occupational training " @1
+		    location   	(1040, 528)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(1040, 666)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"Add occupational training ")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B56DD8D023E")
+		(object ClassView "Class" "Use Case View::SICS::Actors::School" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(256, 752)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(256, 912)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	355
+			justify    	0
+			label      	"School")
+		    icon       	"Actor"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    quidu      	"353D5816026C"
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$0" @3
+		    location   	(568, 660)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5B56DDC7018E"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @4
+			    Parent_View 	@3
+			    location   	(312, -92)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DDC800FB"
+			    client     	@3
+			    supplier   	@1
+			    vertices   	(list Points
+				(568, 660)
+				(823, 587))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$2" @5
+			    Parent_View 	@3
+			    location   	(312, -92)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DDC800FD"
+			    client     	@3
+			    supplier   	@2
+			    vertices   	(list Points
+				(568, 660)
+				(313, 733))
+			    line_style 	0)))
+		(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Occupational training ::Update occupational training " @6
+		    location   	(1040, 880)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(1040, 1018)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"Update occupational training ")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B56DDA7015A")
+		(object AssociationViewNew "$UNNAMED$3" @7
+		    location   	(621, 808)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5B56DDCB022F"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$4" @8
+			    Parent_View 	@7
+			    location   	(365, 56)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DDCC00B4"
+			    client     	@7
+			    supplier   	@6
+			    vertices   	(list Points
+				(621, 808)
+				(930, 857))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$5" @9
+			    Parent_View 	@7
+			    location   	(365, 56)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DDCC00B6"
+			    client     	@7
+			    supplier   	@2
+			    vertices   	(list Points
+				(621, 808)
+				(313, 760))
+			    line_style 	0)))))))
