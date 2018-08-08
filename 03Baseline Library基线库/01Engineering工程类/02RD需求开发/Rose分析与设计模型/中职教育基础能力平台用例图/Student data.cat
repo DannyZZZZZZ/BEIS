@@ -1,0 +1,202 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "Student data"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5B56DB5E020F"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object UseCase "Add student data"
+	    quid       	"5B55D0CC00FB")
+	(object UseCase "Update student data"
+	    quid       	"5B56DB78025C")
+	(object Association "$UNNAMED$0"
+	    quid       	"5B56DBB801BD"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"5B56DBB80398"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Student data::Add student data"
+		    quidu      	"5B55D0CC00FB"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"5B56DBB8039A"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Association "$UNNAMED$3"
+	    quid       	"5B56DBBA01ED"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"5B56DBBB00D8"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Student data::Update student data"
+		    quidu      	"5B56DB78025C"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"5B56DBBB00DA"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C"))))
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "Student data"
+	    quid       	"5B56DB9F024D"
+	    title      	"Student data"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Student data::Add student data" @1
+		    location   	(1088, 416)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(1088, 554)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"Add student data")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B55D0CC00FB")
+		(object ClassView "Class" "Use Case View::SICS::Actors::School" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(288, 720)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(288, 880)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	351
+			justify    	0
+			label      	"School")
+		    icon       	"Actor"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    quidu      	"353D5816026C"
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$0" @3
+		    location   	(644, 581)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5B56DBB801BD"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @4
+			    Parent_View 	@3
+			    location   	(356, -139)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DBB80398"
+			    client     	@3
+			    supplier   	@1
+			    vertices   	(list Points
+				(644, 581)
+				(944, 468))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$2" @5
+			    Parent_View 	@3
+			    location   	(356, -139)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DBB8039A"
+			    client     	@3
+			    supplier   	@2
+			    vertices   	(list Points
+				(644, 581)
+				(345, 695))
+			    line_style 	0)))
+		(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Student data::Update student data" @6
+		    location   	(1104, 816)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(1104, 954)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	630
+			justify    	0
+			label      	"Update student data")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5B56DB78025C")
+		(object AssociationViewNew "$UNNAMED$3" @7
+		    location   	(668, 761)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5B56DBBA01ED"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$4" @8
+			    Parent_View 	@7
+			    location   	(380, 41)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DBBB00D8"
+			    client     	@7
+			    supplier   	@6
+			    vertices   	(list Points
+				(668, 761)
+				(992, 798))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$5" @9
+			    Parent_View 	@7
+			    location   	(380, 41)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5B56DBBB00DA"
+			    client     	@7
+			    supplier   	@2
+			    vertices   	(list Points
+				(668, 761)
+				(345, 725))
+			    line_style 	0)))))))
